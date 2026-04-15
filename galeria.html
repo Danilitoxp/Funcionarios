@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .image-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .image-card:hover {
+            transform: translateY(-10px);
+        }
+        .image-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        .download-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: #667eea;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background 0.3s ease;
+        }
+        .download-btn:hover {
+            background: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Galeria de Imagens</h1>
+        <div class="gallery">
+            <div class="image-card">
+                <img src="Daniel.jpg" alt="Daniel">
+                <a href="Daniel.jpg" download="Daniel.jpg" class="download-btn">Baixar Daniel</a>
+            </div>
+            <div class="image-card">
+                <img src="Emmanuel.jpg" alt="Emmanuel">
+                <a href="Emmanuel.jpg" download="Emmanuel.jpg" class="download-btn">Baixar Emmanuel</a>
+            </div>
+            <div class="image-card">
+                <img src="henrique.jpg" alt="Henrique">
+                <a href="henrique.jpg" download="henrique.jpg" class="download-btn">Baixar Henrique</a>
+            </div>
+            <div class="image-card">
+                <img src="joao.jpg" alt="João">
+                <a href="joao.jpg" download="joao.jpg" class="download-btn">Baixar João</a>
+            </div>
+            <div class="image-card">
+                <img src="luiz.jpg" alt="Luiz">
+                <a href="luiz.jpg" download="luiz.jpg" class="download-btn">Baixar Luiz</a>
+            </div>
+            <div class="image-card">
+                <img src="murilo.jpg" alt="Murilo">
+                <a href="murilo.jpg" download="murilo.jpg" class="download-btn">Baixar Murilo</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
