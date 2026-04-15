@@ -1,0 +1,17 @@
+# Cache do navegador e do sistema
+.DS_Store
+Thumbs.db
+
+# Editor de código
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Notas de arquivo (opcional)
+*.md
+!README.md
